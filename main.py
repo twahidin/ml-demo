@@ -48,7 +48,7 @@ def video_frame_callback(frame):
 	return frame
 
 def main():
-	st.title(":blue[ITD Showcase 2023 - COTF]")
+	st.title(":blue[ITD Showcase 2023 - MOVE App V2]")
 	sac.divider(label='ML/LLM showcase', icon='app', align='start', direction='horizontal', dashed=False, bold=False)
 
 	if "sport" not in st.session_state:

@@ -346,7 +346,8 @@ def photo_upload_input():
 			result_img = photo_train(img, pose_name)
 			st.image(result_img)
 			st.success("Analyse Success!")
-			st.write("Upload a new photo for another pose or the same pose")
+			st.warning("Please click X and close the image before analysing the next image")
+			st.write("Upload a new image for another pose or the same pose")
 			if result_img:
 				st.session_state.pose_counter += 1
 				uploaded_file
@@ -368,7 +369,8 @@ def photo_capture_input():
 			result_img = photo_train(img, pose_name)
 			st.image(result_img)
 			st.success("Analyse Success!")
-			st.write("Take another photo for another pose or the same pose")
+			st.warning("Please click X and close the image before analysing the next image")
+			st.write("Upload a new image for another pose or the same pose")
 			if result_img:
 				st.session_state.pose_counter += 1
 				img_file_buffer = None
